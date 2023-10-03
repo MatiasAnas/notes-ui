@@ -1,0 +1,23 @@
+@import 'styles/colors.module.scss';
+
+.container {
+  border: 1px solid $borders-color;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.title {
+  color: $black;
+}
+
+.content {
+  color: $gray;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}

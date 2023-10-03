@@ -1,5 +1,9 @@
 @import 'styles/sizes.module.scss';
 
 .container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  grid-auto-flow: row;
   padding: $default-route-padding;
 }
