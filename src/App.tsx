@@ -2,10 +2,13 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Notes from './views/Notes';
 
 import styles from './App.module.scss';
 
-function App() {
+const App = () => {
   return (
     <Box>
       <AppBar position="static" className={styles.topbar}>
@@ -16,12 +19,14 @@ function App() {
         </Toolbar>
       </AppBar>
       <Box className={styles.appContent}>
-        <Typography variant="h6" component="div">
-          App Content
-        </Typography>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Notes />} />
+          </Routes>
+        </BrowserRouter>
       </Box>
     </Box>
   );
-}
+};
 
 export default App;
