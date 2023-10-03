@@ -1,0 +1,11 @@
+@import 'styles/sizes.module.scss';
+
+.topbar {
+  height: $topbar-size;
+}
+
+.appContent {
+  height: calc(100vh - #{$topbar-size});
+  padding: 24px;
+  overflow-y: auto;
+}
