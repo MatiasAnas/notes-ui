@@ -14,7 +14,7 @@ const NoteCard = ({ note }: NoteCardProps) => {
       <Typography variant="h6" className={styles.title}>
         {note.title}
       </Typography>
-      <Typography variant="subtitle1" className={getContentClassName(note)}>
+      <Typography variant="body1" className={getContentClassName(note)}>
         {note.content}
       </Typography>
     </Box>
