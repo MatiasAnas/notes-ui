@@ -1,9 +1,20 @@
 @import 'styles/sizes.module.scss';
 
 .container {
+  padding: $default-route-padding;
+}
+
+.notesGrid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   grid-auto-flow: row;
-  padding: $default-route-padding;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  width: 100%;
 }

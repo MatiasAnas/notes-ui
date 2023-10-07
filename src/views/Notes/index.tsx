@@ -1,4 +1,6 @@
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 import { Note } from '../../types/notes';
 
@@ -84,9 +86,15 @@ const NOTES: Note[] = [
 const Notes = () => {
   return (
     <Box className={styles.container}>
-      {NOTES.map((note: Note) => (
-        <NoteCard key={note.id} note={note} />
-      ))}
+      <Box className={styles.header}>
+        <Typography variant="h4">Notes</Typography>
+        <Button variant="contained">Create new</Button>
+      </Box>
+      <Box className={styles.notesGrid}>
+        {NOTES.map((note: Note) => (
+          <NoteCard key={note.id} note={note} />
+        ))}
+      </Box>
     </Box>
   );
 };

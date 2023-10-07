@@ -1,4 +1,5 @@
 @import 'styles/sizes.module.scss';
+@import 'styles/colors.module.scss';
 
 .topbar {
   height: $topbar-size;
@@ -7,4 +8,9 @@
 .appContent {
   height: calc(100vh - #{$topbar-size});
   overflow-y: auto;
+}
+
+.sidebarHeader {
+  border-bottom: 1px solid $borders-color;
+  height: $topbar-size;
 }
